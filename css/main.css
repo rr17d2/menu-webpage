@@ -1,0 +1,266 @@
+.info {
+    background: #eaf0ec;
+}
+
+.info h2 {
+    word-spacing: 0.6rem;
+}
+
+.info a {
+    transition: color 2s ease-in-out;
+}
+
+.info a:hover {
+    color: #242424;
+}
+
+.primary-color {
+    color: #87a824;
+}
+
+
+/* header section */
+
+#header {
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(145, 247, 145, 0.3), rgba(0, 0, 0, 0.2)), url(https://hsaba.com/wp-content/uploads/2016/05/burmese_brunch-1024x683.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.height-90 {
+    min-height: calc(100vh - 94px);
+}
+
+.banner h1 {
+    /*border-top: 6px dotted #c9c1ac;
+    border-bottom: 6px dotted #c9c1ac;*/
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-btn {
+    background-color: #87a824;
+    color: #eaf0ec;
+    padding: 5px 25px;
+    font-size: 2rem;
+    /*border: 2px solid #87a824;*/
+    transition: all 1s ease-in-out;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 12px;
+}
+
+.main-btn:hover {
+    color: #242424;
+    border: 2px solid #eaf0ec;
+    background: #eaf0ec;
+}
+
+.burma-btn {
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header-link {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background-color: #eaf0ec;
+    border-radius: 10px;
+    transition: all 2s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.header-link {
+    color: #242424;
+}
+
+@keyframes fromBottom {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* menu items */
+
+.item-container {
+    position: relative;
+    /*for the link*/
+    overflow: hidden;
+    background: linear-gradient(rgb(0, 0, 0)), rgb(0, 0, 0);
+    transition: all 2s ease;
+}
+
+.item-img {
+    transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.item-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #87a824;
+    font-size: 2rem;
+    border-top: 3px solid #87a824;
+    border-bottom: 3px solid #87a824;
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+.item-container:hover .item-link {
+    opacity: 1;
+}
+
+.item-link:hover {
+    color: #eaf0ec;
+    border: 3px solid #eaf0ec;
+    background: #eaf0ec;
+    color: #87a824;
+}
+
+.item-container:hover {
+    outline: 10px solid #87a824;
+    outline-offset: 0.8rem;
+}
+
+body {
+    background: url(https://s24890.pcdn.co/wp-content/uploads/2017/07/Myanmar-Things-to-See.jpg)center/cover fixed no-repeat;
+}
+
+h1,
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #eaf0ec;
+}
+
+h3 {
+    color: #87a824;
+    font-family: 'Permanent Marker', cursive;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    color: black;
+    padding-top: 25px;
+}
+
+.myBox {
+    border: none;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+}
+
+
+/* Scrollbar styles */
+
+ ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+ ::-webkit-scrollbar-track {
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: yellowgreen;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #88ba1c;
+}
+
+
+/* menu */
+
+#menu {
+    background: linear-gradient(rgba(234, 240, 236, 0.5), rgba(255, 255, 255, 0.7)), url()center/cover fixed no-repeat;
+}
+
+.popular {
+    border: 3px solid #88ba1c;
+    position: relative;
+    padding-top: 20px;
+}
+
+.popular-text {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: #88ba1c;
+    padding: 0 0.4rem;
+    padding-top: 15px;
+}
+
+.special {
+    border: 3px solid gold;
+    position: relative;
+    padding-top: 20px;
+}
+
+.special-text {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: gold;
+    padding: 0 0.4rem;
+    padding-top: 15px;
+}
